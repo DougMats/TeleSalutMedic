@@ -28,8 +28,8 @@ export default function Login(props) {
   const [formInfo, setFormInfo] = useState({
     email: '',
     password: ''
-    //email: 'dougrafic.art@gmail.com',
-    //password: 'Qwerty'
+    // email: 'dougrafic.art@gmail.com',
+    // password: 'Qwerty'
   })
 
   function onChangeText(text, key) {

@@ -243,7 +243,7 @@ export default function NewClient(props) {
             <BTN icon="save-outline" text="Registrar" function={Save} screen="Login" data={"douglas"} w={"50%"} />
           </View>
         </ScrollView>
-        <Menu props={props} option={6} />
+        <Menu props={props} option={2} />
       </LinearGradient>
       {show && (
         <DateTimePicker

@@ -666,7 +666,7 @@ function Historyclinic(props) {
             <BTN icon="save-outline" text="Guardar" function={save} w={"60%"} data={'adcd'} />
           </View>
         </ScrollView>
-        <Menu props={props} option={1} />
+        <Menu props={props} option={2} />
       </LinearGradient>
     </SafeAreaView>
   )

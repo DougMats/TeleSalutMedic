@@ -90,7 +90,7 @@ export default function Dashboard(props) {
 
   function goToScreen(screen, data) {
     let from = "Dashboard"
-    let code = data.code
+    let code = 0//data.code
     navigation.navigate(screen, { randomCode: Math.random(), data, from, code })
   }
 
@@ -98,6 +98,7 @@ export default function Dashboard(props) {
     let from = "Dashboard"
     navigation.navigate(screen, { randomCode: Math.random(), key_conference, from })
   }
+
 
   function print(array) {
     try {

@@ -244,7 +244,7 @@ function share(){
             }
           </View>
         </ScrollView>
-        <Menu props={props} option={2.2} />
+        <Menu props={props} option={2} />
       </LinearGradient>
     </SafeAreaView>
   )

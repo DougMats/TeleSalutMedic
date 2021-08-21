@@ -28,6 +28,9 @@ export default function Menu(props) {
 
   return (
     <SafeAreaView style={styles.wrap}>
+
+
+
       <TouchableOpacity style={styles.btn} onPress={() => goToScreen("Profile")}>
         {props.option === 1 ?
           <LinearGradient colors={[colorBettaLight, colorBetta]} style={styles.btn}>
@@ -37,22 +40,10 @@ export default function Menu(props) {
           <Icon name='person' height={25} width={25} fill={props.option === 1 ? colorZeta : colorBetta} />
         }
       </TouchableOpacity>
-      <TouchableOpacity style={styles.btn} onPress={() => goToScreen("Dashboard")}>
-        {props.option === 2 ?
-          <LinearGradient colors={[colorBettaLight, colorBetta]} style={styles.btn}>
-            <Icon name='list' height={25} width={25} fill={colorZeta} />
-          </LinearGradient>
-          :
-          <Icon name='list' height={25} width={25} fill={props.option === 2 ? colorZeta : colorBetta} />
-        }
-      </TouchableOpacity>
-      {props.option === 2.2 &&
-        <TouchableOpacity style={styles.btn} onPress={() => goToScreen("Dashboard")}>
-          <LinearGradient colors={[colorBettaLight, colorBetta]} style={styles.btn}>
-            <Icon name='arrow-back-outline' height={25} width={25} fill={colorZeta} />
-          </LinearGradient>
-        </TouchableOpacity>
-      }
+   
+
+
+
       <TouchableOpacity style={styles.btn} onPress={() => goToScreen("Sala")}>
         {props.option === 3 ?
           <LinearGradient colors={[colorBettaLight, colorBetta]} style={styles.btn}>
@@ -62,6 +53,24 @@ export default function Menu(props) {
           <Icon name='video-outline' height={25} width={25} fill={props.option === 3 ? colorZeta : colorBetta} />
         }
       </TouchableOpacity>
+
+
+
+
+      <TouchableOpacity style={styles.btn} onPress={() => goToScreen("Dashboard")}>
+        {props.option === 2 ?
+          <LinearGradient colors={[colorBettaLight, colorBetta]} style={styles.btn}>
+            <Icon name='home-outline' height={25} width={25} fill={colorZeta} />
+          </LinearGradient>
+          :
+          <Icon name='list' height={25} width={25} fill={props.option === 2 ? colorZeta : colorBetta} />
+        }
+      </TouchableOpacity>
+
+
+
+
+
       <TouchableOpacity style={styles.btn} onPress={() => goToScreen("Quotation")}>
         {props.option === 4 ?
           <LinearGradient colors={[colorBettaLight, colorBetta]} style={styles.btn}>
@@ -71,6 +80,10 @@ export default function Menu(props) {
           <Icon name='clipboard-outline' height={25} width={25} fill={props.option === 4 ? colorZeta : colorBetta} />
         }
       </TouchableOpacity>
+
+
+
+
       <TouchableOpacity style={styles.btn} onPress={() => logOut()}>
         {props.option === 5 ?
           <LinearGradient colors={[colorBettaLight, colorBetta]} style={styles.btn}>
@@ -80,6 +93,10 @@ export default function Menu(props) {
           <Icon name='power' height={25} width={25} fill={props.option === 5 ? colorZeta : colorBetta} />
         }
       </TouchableOpacity>
+
+
+
+      
     </SafeAreaView>
   )
 }

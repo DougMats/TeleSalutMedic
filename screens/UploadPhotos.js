@@ -228,7 +228,7 @@ function UploadPhotos(props) {
           </TouchableOpacity> */}
         </View>
       </ScrollView>
-      <Menu props={props} option={0} />
+      <Menu props={props} option={2} />
       {
         loaded === 1 &&
         <View style={{ position: "absolute", zIndex: 999, width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.8)", justifyContent: "center", alignContent: "center", alignItems: "center" }}>

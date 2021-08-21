@@ -24,7 +24,8 @@ function Quotation(props) {
   const [Valoration, setValoration] = useState(undefined);
   const [ListPatient, setListPatient] = useState([]);
   const { userDetails, setUserDetails } = useContext(UserContext)
-  const [Form, setForm] = useState({ name: "plan nutricional", description: "lo que la nutri quiera escribir aqui", price: "450000", qty: 1 });
+//  const [Form, setForm] = useState({ name: "plan nutricional", description: "lo que la nutri quiera escribir aqui", price: "450000", qty: 1 });
+  const [Form, setForm] = useState({ name: "", description: "", price: "", qty: 1 });
   const [add, setadd] = useState(false);
   const [QuotationList, setQuotationList] = useState([]);
   const [display, setdisplay] = useState(false);
@@ -435,7 +436,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     width: "90%",
     overflow: "hidden",
-    maxHeight: "90%"
+    maxHeight: "85%"
   },
   modalJustify: {
     marginVertical: 20,
